@@ -207,15 +207,45 @@ const Index = () => {
         </div>
       </div>
 
-      <footer className="bg-gray-900 text-white py-12">
-        <div className="container mx-auto px-4 text-center">
-          <div className="flex justify-center items-center gap-2 mb-4">
-            <Icon name="Cpu" size={32} className="text-purple-400" />
-            <h3 className="text-2xl font-bold">IT-Сервис</h3>
+      <footer className="bg-gray-900 text-white py-16">
+        <div className="container mx-auto px-4">
+          <div className="grid md:grid-cols-3 gap-12 mb-8">
+            <div>
+              <div className="flex items-center gap-2 mb-4">
+                <Icon name="Cpu" size={32} className="text-purple-400" />
+                <h3 className="text-2xl font-bold">ООО "Бизнес Форум"</h3>
+              </div>
+              <p className="text-gray-400">
+                Профессиональное обслуживание компьютерной техники и программного обеспечения
+              </p>
+            </div>
+            
+            <div>
+              <h4 className="text-lg font-bold mb-4 text-purple-400">Контакты</h4>
+              <div className="space-y-3 text-gray-400">
+                <a href="tel:+79131898885" className="flex items-center gap-3 hover:text-white transition-colors">
+                  <Icon name="Phone" size={20} />
+                  <span>+7 (913) 189-88-85</span>
+                </a>
+              </div>
+            </div>
+            
+            <div>
+              <h4 className="text-lg font-bold mb-4 text-purple-400">Адрес офиса</h4>
+              <div className="flex items-start gap-3 text-gray-400">
+                <Icon name="MapPin" size={20} className="mt-1 flex-shrink-0" />
+                <p>
+                  г. Шарыпово,<br />
+                  микрорайон Пионерный, д. 5,<br />
+                  офис 217
+                </p>
+              </div>
+            </div>
           </div>
-          <p className="text-gray-400">
-            Профессиональное обслуживание компьютерной техники и программного обеспечения
-          </p>
+          
+          <div className="border-t border-gray-800 pt-8 text-center text-gray-500">
+            <p>© 2024 ООО "Бизнес Форум". Все права защищены.</p>
+          </div>
         </div>
       </footer>
     </div>
