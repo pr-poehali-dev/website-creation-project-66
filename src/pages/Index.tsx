@@ -158,33 +158,153 @@ const Index = () => {
 
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
-            <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
-                Сертифицированный партнёр 1С
-              </h2>
-              <div className="space-y-4 text-gray-600">
-                <div className="flex items-start gap-3">
-                  <Icon name="CheckCircle2" size={24} className="text-green-500 flex-shrink-0 mt-1" />
-                  <p>Официальная лицензия и гарантия качества внедрения</p>
+          <div className="text-center mb-16 space-y-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
+              Почему выбирают нас
+            </h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              Надёжный партнёр для развития вашего бизнеса
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+            <Card className="p-6 text-center border border-gray-200">
+              <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Icon name="Award" size={32} className="text-green-600" />
+              </div>
+              <h3 className="text-lg font-bold mb-2 text-gray-900">Сертифицированный партнёр</h3>
+              <p className="text-sm text-gray-600">Официальный партнёр 1С с подтверждённой квалификацией</p>
+            </Card>
+
+            <Card className="p-6 text-center border border-gray-200">
+              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Icon name="Clock" size={32} className="text-blue-600" />
+              </div>
+              <h3 className="text-lg font-bold mb-2 text-gray-900">Быстрое реагирование</h3>
+              <p className="text-sm text-gray-600">Выезд специалиста в день обращения, круглосуточная поддержка</p>
+            </Card>
+
+            <Card className="p-6 text-center border border-gray-200">
+              <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Icon name="Shield" size={32} className="text-orange-600" />
+              </div>
+              <h3 className="text-lg font-bold mb-2 text-gray-900">Гарантия качества</h3>
+              <p className="text-sm text-gray-600">Официальная гарантия на все работы и оборудование</p>
+            </Card>
+
+            <Card className="p-6 text-center border border-gray-200">
+              <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Icon name="Users" size={32} className="text-purple-600" />
+              </div>
+              <h3 className="text-lg font-bold mb-2 text-gray-900">Опытная команда</h3>
+              <p className="text-sm text-gray-600">Специалисты с опытом работы более 10 лет</p>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16 space-y-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
+              Цены на услуги
+            </h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              Прозрачное ценообразование без скрытых платежей
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            <Card className="p-8 border-2 border-gray-200 hover:border-blue-500 transition-colors">
+              <div className="mb-6">
+                <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+                  <Icon name="Laptop" size={24} className="text-blue-600" />
                 </div>
-                <div className="flex items-start gap-3">
-                  <Icon name="CheckCircle2" size={24} className="text-green-500 flex-shrink-0 mt-1" />
-                  <p>Квалифицированные специалисты с сертификатами 1С</p>
+                <h3 className="text-xl font-bold mb-2 text-gray-900">Ремонт техники</h3>
+                <p className="text-gray-600 text-sm">Диагностика и ремонт компьютеров</p>
+              </div>
+              <div className="space-y-3 mb-6">
+                <div className="flex justify-between text-sm">
+                  <span className="text-gray-600">Диагностика</span>
+                  <span className="font-semibold text-gray-900">от 500 ₽</span>
                 </div>
-                <div className="flex items-start gap-3">
-                  <Icon name="CheckCircle2" size={24} className="text-green-500 flex-shrink-0 mt-1" />
-                  <p>Поддержка и обновление на всех этапах работы</p>
+                <div className="flex justify-between text-sm">
+                  <span className="text-gray-600">Чистка от пыли</span>
+                  <span className="font-semibold text-gray-900">от 1 000 ₽</span>
+                </div>
+                <div className="flex justify-between text-sm">
+                  <span className="text-gray-600">Замена комплектующих</span>
+                  <span className="font-semibold text-gray-900">от 800 ₽</span>
                 </div>
               </div>
-            </div>
-            <div className="bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-2xl">
-              <img 
-                src="https://cdn.poehali.dev/projects/3e98281e-b231-4b04-9fca-6c375b11cc8f/files/9c4c1fe5-6999-4c38-a395-178c839afc61.jpg"
-                alt="Сертификат 1С"
-                className="rounded-xl w-full"
-              />
-            </div>
+              <Button className="w-full" variant="outline" onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}>
+                Заказать
+              </Button>
+            </Card>
+
+            <Card className="p-8 border-2 border-blue-500 relative hover:shadow-xl transition-shadow">
+              <div className="absolute -top-4 left-1/2 -translate-x-1/2">
+                <span className="bg-orange-500 text-white px-4 py-1 rounded-full text-sm font-semibold">Популярное</span>
+              </div>
+              <div className="mb-6">
+                <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+                  <Icon name="FileSpreadsheet" size={24} className="text-blue-600" />
+                </div>
+                <h3 className="text-xl font-bold mb-2 text-gray-900">Программы 1С</h3>
+                <p className="text-gray-600 text-sm">Внедрение и сопровождение</p>
+              </div>
+              <div className="space-y-3 mb-6">
+                <div className="flex justify-between text-sm">
+                  <span className="text-gray-600">Консультация</span>
+                  <span className="font-semibold text-gray-900">Бесплатно</span>
+                </div>
+                <div className="flex justify-between text-sm">
+                  <span className="text-gray-600">Внедрение</span>
+                  <span className="font-semibold text-gray-900">от 15 000 ₽</span>
+                </div>
+                <div className="flex justify-between text-sm">
+                  <span className="text-gray-600">Абонемент сопровождения</span>
+                  <span className="font-semibold text-gray-900">от 5 000 ₽/мес</span>
+                </div>
+              </div>
+              <Button className="w-full bg-blue-600 hover:bg-blue-700" onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}>
+                Заказать
+              </Button>
+            </Card>
+
+            <Card className="p-8 border-2 border-gray-200 hover:border-blue-500 transition-colors">
+              <div className="mb-6">
+                <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+                  <Icon name="Receipt" size={24} className="text-blue-600" />
+                </div>
+                <h3 className="text-xl font-bold mb-2 text-gray-900">Онлайн-кассы</h3>
+                <p className="text-gray-600 text-sm">Регистрация и обслуживание ККТ</p>
+              </div>
+              <div className="space-y-3 mb-6">
+                <div className="flex justify-between text-sm">
+                  <span className="text-gray-600">Регистрация в ФНС</span>
+                  <span className="font-semibold text-gray-900">от 2 000 ₽</span>
+                </div>
+                <div className="flex justify-between text-sm">
+                  <span className="text-gray-600">Настройка ККТ</span>
+                  <span className="font-semibold text-gray-900">от 3 000 ₽</span>
+                </div>
+                <div className="flex justify-between text-sm">
+                  <span className="text-gray-600">Замена ФН</span>
+                  <span className="font-semibold text-gray-900">от 1 500 ₽</span>
+                </div>
+              </div>
+              <Button className="w-full" variant="outline" onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}>
+                Заказать
+              </Button>
+            </Card>
+          </div>
+
+          <div className="text-center mt-12">
+            <p className="text-gray-600 mb-6">Точная стоимость рассчитывается индивидуально после диагностики</p>
+            <Button size="lg" className="bg-orange-500 hover:bg-orange-600" onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}>
+              Получить расчёт стоимости
+            </Button>
           </div>
         </div>
       </section>
