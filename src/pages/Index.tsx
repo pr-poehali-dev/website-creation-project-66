@@ -220,8 +220,8 @@ const Index = () => {
                 <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
                   <Icon name="Laptop" size={24} className="text-blue-600" />
                 </div>
-                <h3 className="text-xl font-bold mb-2 text-gray-900">Ремонт техники</h3>
-                <p className="text-gray-600 text-sm">Диагностика и ремонт компьютеров</p>
+                <h3 className="text-xl font-bold mb-2 text-gray-900">Ремонт компьютеров, ноутбуков</h3>
+                <p className="text-gray-600 text-sm">Диагностика и ремонт любой сложности</p>
               </div>
               <div className="space-y-3 mb-6">
                 <div className="flex justify-between text-sm">
